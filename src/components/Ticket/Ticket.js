@@ -12,7 +12,7 @@ const Ticket = (props) => {
     const transfer = el.stops.length ? (
       <>
         <span>{`${el.stops.length} пересадки`}</span>
-        <p>{el.stops}</p>
+        <p>{el.stops.join(', ')}</p>
       </>
     ) : (
       <span>Без пересадок</span>
