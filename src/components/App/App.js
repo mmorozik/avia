@@ -25,7 +25,9 @@ const App = () => {
     <div className={classes.app}>
       <img src={logo} className={classes.logo} />
       <div className={classes.wrapper}>
-        <Filter />
+        <div className={classes.filter}>
+          <Filter />
+        </div>
         <div className={classes.main}>
           <Tabs />
           <TicketList />

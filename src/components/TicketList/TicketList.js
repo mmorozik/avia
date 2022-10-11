@@ -27,7 +27,7 @@ const TicketList = () => {
       case 'faster':
         return copyData.sort((a, b) => a.segments[0].duration - b.segments[0].duration)
       case 'optimal':
-        return copyData.sort((a, b) => a.segments[0].duration + (a.pice / 50) - b.segments[0].duration - (b.price / 50))
+        return copyData.sort((a, b) => a.segments[0].duration + (a.pice / 10) - b.segments[0].duration - (b.price / 10))
     }    
   }
 

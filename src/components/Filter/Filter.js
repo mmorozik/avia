@@ -23,7 +23,7 @@ const Filter = () => {
           type="checkbox"
           checked={filtersState[el.key]}
           onChange={() => dispatch(toggleCheck({ key: el.key }))}
-        ></input>
+        />
         <span className={classes.checkbox}></span>
         <span>{el.label}</span>
       </label>
